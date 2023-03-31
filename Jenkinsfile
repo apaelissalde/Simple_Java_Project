@@ -9,7 +9,6 @@ pipeline {
         stage('nexus'){
             steps {
                 script {
-                    //pipeline-utility-steps
                         def pom = readMavenPom file: "pom.xml";
                         
                     dir("target"){
